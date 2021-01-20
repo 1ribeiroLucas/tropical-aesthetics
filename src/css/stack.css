@@ -1,0 +1,35 @@
+.stack {
+  height: 10vw;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1.8rem auto;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #577399;
+  color: white;
+}
+
+h2 {
+  padding: 1.6rem;
+  margin: auto 0;
+  width: 50%;
+  font-size: 2.4rem;
+}
+
+.skills {
+  width: 45%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills p {
+  width: 30%;
+  margin: .2rem auto;
+  padding: .4rem;
+  font-weight: bold;
+}

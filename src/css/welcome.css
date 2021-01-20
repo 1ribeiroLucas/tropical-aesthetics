@@ -1,0 +1,46 @@
+@keyframes right-to-left {
+  0% {
+    position: relative;
+    left: calc(100vw - 30%);
+  }
+
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-flow: column wrap;
+  height: inherit;
+  text-align: center;
+  animation: right-to-left  1s ease-in-out;
+}
+
+.welcome > div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome > div:nth-child(2) {
+  align-self: flex-start;
+}
+
+.welcome > div:nth-child(1) {
+  align-self: flex-end;
+  color: #F7F7FF;
+  background: #FE5F55;
+}
+
+.welcome > div > h1 {
+  font-size: 7.2rem;
+}
+
+.welcome > div > h2 {
+  width: 100%;
+  font-size: 3.2rem;
+}
