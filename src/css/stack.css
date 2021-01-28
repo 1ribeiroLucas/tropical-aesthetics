@@ -33,3 +33,20 @@ h2 {
   padding: .4rem;
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  .stack {
+    width: 100%;
+    height: fit-content;
+    border-radius: 0;
+    flex-flow: column nowrap;
+  }
+
+  .stack > h2 {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+}

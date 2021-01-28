@@ -23,3 +23,18 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .nav-link {
+    padding: 1.6rem;
+  }
+
+  .nav-link > .icon {
+    font-size: 3.2rem;
+  }
+}
