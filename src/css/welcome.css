@@ -12,7 +12,6 @@
 
 .welcome {
   display: flex;
-  flex-flow: column wrap;
   height: inherit;
   text-align: center;
   animation: right-to-left  1s ease-in-out;
@@ -43,4 +42,22 @@
 .welcome > div > h2 {
   width: 100%;
   font-size: 3.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    flex-flow: column-reverse nowrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .welcome > div {
+    height: inherit;
+    width: 100%;
+    padding: .8rem;
+  }
+
+  .welcome > div > h2 {
+    font-size: 2.4rem;
+  }
 }
