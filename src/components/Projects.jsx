@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
     
     return (
       <div style={style} className="projects">
-        <h1>Ainda estamos trabalhando aqui!</h1>
+        <h1><a href="https://rpg-chars.vercel.app/" target="_blank">BRCC - Bardo's RPG Character Creator</a></h1>
       </div>
     )
   }
