@@ -1,25 +1,13 @@
 import React from 'react';
-import {
-  Switch,
-  Route,
-} from 'react-router-dom';
-import {
-  About,
-  NotFound,
-  Projects,
-  Welcome
-} from '../pages';
-import paths from '../paths';
+import { Routes, Route } from 'react-router-dom';
+import { LRHomepage } from '../components/LRHomepage';
+import { LRProjects } from '../components/LRProjects';
 
-const { HOME, ABOUT, PROJECTS } = paths;
-
-export default function Routes() {
+export const LRRouter: React.FC = (): JSX.Element => {
   return (
-    <Switch>
-      <Route exact path={HOME} component={Welcome} />
-      <Route path={ABOUT} component={About} />
-      <Route path={PROJECTS} component={Projects} />
-      <Route component={NotFound} />
-    </Switch>
-  );
-};
+    <Routes>
+      <Route path="/" element={<LRHomepage />}/>
+      <Route path="/projetos" element={<LRProjects />} />
+    </Routes>
+  )
+} 

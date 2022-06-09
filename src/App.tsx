@@ -1,25 +1,21 @@
 import React from 'react';
-import {
-  Navbar,
-  Footer,
-  Stack,
-} from './components';
-import Routes from './routes';
 
-import './css/about.css';
-import './css/footer.css';
-import './css/navbar.css';
-import './css/stack.css';
-import './css/styles.css';
-import './css/welcome.css';
+import { GlobalStyle } from './globals/globalStyles';
 
-export default function App() {
+import { LRHeader } from './components/LRHeader';
+import { LRFooter } from './components/LRFooter';
+import { LRRouter } from './routes';
+import { LRContainer } from './components/LRContainer';
+
+export const App: React.FC = (): JSX.Element => {
   return (
-    <div>
-      <Navbar />
-      <Routes />
-      <Stack />
-      <Footer />
-    </div>
-  )
-}
+    <>
+      <GlobalStyle />
+      <LRHeader />
+      <LRContainer>
+        <LRRouter />
+      </LRContainer>
+      <LRFooter />
+    </>
+  );
+};
