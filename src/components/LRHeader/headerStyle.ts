@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Header = styled("header")`
+  position: fixed;
+  width: 100%;
   height: 80px;
-  background-color: purple;
+  background-color: var(--dark-blue);
 `;
 
 export const Nav = styled("nav")`
@@ -16,9 +18,15 @@ export const Nav = styled("nav")`
 export const Button = styled("button").attrs({ type: "button" })`
   width: 100px;
   height: inherit;
-  background: lightcoral;
+  background: var(--pink-one);
   border: none;
   color: white;
   margin: 0 4px;
   cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: var(--pink-one-hover);
+    font-size: 18px;
+  }
 `;
