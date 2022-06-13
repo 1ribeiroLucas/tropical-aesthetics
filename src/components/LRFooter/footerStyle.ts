@@ -11,6 +11,7 @@ export const Footer = styled("footer")`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  /* z-index: 5; */
 `;
 
 export const FooterSection = styled("section")`

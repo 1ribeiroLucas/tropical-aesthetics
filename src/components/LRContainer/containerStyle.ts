@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled("main")`
-  height: 768px;
+  height: 100vh;
   overflow-y: auto;
-  margin-top: 80px;
+  margin: 80px auto 112px;
 `;

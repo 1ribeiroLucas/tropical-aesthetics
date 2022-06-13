@@ -5,6 +5,7 @@ export const Header = styled("header")`
   width: 100%;
   height: 80px;
   background-color: var(--dark-blue);
+  z-index: 5;
 `;
 
 export const Nav = styled("nav")`

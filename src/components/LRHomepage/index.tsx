@@ -8,6 +8,7 @@ import {
   HomepageStackList,
   HomepageStackListItem,
   HomepageSubSection,
+  HomepageSubSectionH3,
   HomepageSubSectionParagraph
 } from './homepageStyle';
 
@@ -39,7 +40,7 @@ export const LRHomepage: React.FC = (): JSX.Element => {
         <HomepageHeaderH3>Especialidade: Front-End</HomepageHeaderH3>
       </HomepageHeader>
       <HomepageSubSection>
-        <h3>Perfil</h3>
+        <HomepageSubSectionH3>Perfil</HomepageSubSectionH3>
         <HomepageSubSectionParagraph>
           Um desenvolvedor web curioso viciado em videogames antigos, queijos, destilados e
           música estranha. Sempre buscando uma forma mais robusta e elegante de
@@ -49,7 +50,7 @@ export const LRHomepage: React.FC = (): JSX.Element => {
         </HomepageSubSectionParagraph>
       </HomepageSubSection>
       <HomepageSubSection>
-        <h3>Com o que eu trabalho?</h3>
+        <HomepageSubSectionH3>Com o que eu trabalho?</HomepageSubSectionH3>
         <HomepageStackList>
           <HomepageStackListItem>
             <SiHtml5 size={48} />
